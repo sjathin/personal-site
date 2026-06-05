@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   ...createPageMetadata({
     title: 'Writing',
     description:
-      'Articles on AI security, LLM red teaming, and trust & safety.',
+      'Research and writing on real-time systems, distributed systems, and software engineering.',
     path: '/writing/',
   }),
   alternates: {

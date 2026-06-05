@@ -3,9 +3,9 @@
  */
 
 // Site configuration
-export const SITE_URL = 'https://mldangelo.com';
-export const AUTHOR_NAME = "Michael D'Angelo";
-export const TWITTER_HANDLE = '@dangelosaurus';
+export const SITE_URL = 'https://jathinsreenivas.com';
+export const AUTHOR_NAME = "Jathin Sreenivas";
+export const TWITTER_HANDLE = '@sjathin95';
 
 // Image dimension constants
 export const AVATAR_SIZE = {

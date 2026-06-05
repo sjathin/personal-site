@@ -10,37 +10,28 @@ describe('about data', () => {
 
   it('contains the intro section', () => {
     expect(aboutMarkdown).toContain('# Intro');
-    expect(aboutMarkdown).toContain('OpenAI');
-    expect(aboutMarkdown).toContain('Promptfoo');
+    expect(aboutMarkdown).toContain('Amazon');
+    expect(aboutMarkdown).toContain('Berlin');
   });
 
-  it('contains the history section', () => {
-    expect(aboutMarkdown).toContain('# Some History');
-    expect(aboutMarkdown).toContain('MS-DOS');
+  it('contains the what I do section', () => {
+    expect(aboutMarkdown).toContain('# What I Do');
+    expect(aboutMarkdown).toContain('backend services');
   });
 
-  it('contains the likes section', () => {
-    expect(aboutMarkdown).toContain('# I Like');
+  it('contains the research section', () => {
+    expect(aboutMarkdown).toContain('# Research');
+    expect(aboutMarkdown).toContain('DLR');
+  });
+
+  it('contains the outside work section', () => {
+    expect(aboutMarkdown).toContain('# Outside Work');
     expect(aboutMarkdown).toContain('Running');
-    expect(aboutMarkdown).toContain('Skiing');
   });
 
-  it('contains the travel section', () => {
-    expect(aboutMarkdown).toContain('# Travel / Geography');
-    expect(aboutMarkdown).toContain('Buffalo, New York');
-  });
-
-  it('contains the fun facts section', () => {
-    expect(aboutMarkdown).toContain('# Fun Facts');
-  });
-
-  it('contains the dreams section', () => {
-    expect(aboutMarkdown).toContain('# I Dream Of');
-    expect(aboutMarkdown).toContain('Staying curious');
-  });
-
-  it('contains the admired websites section', () => {
-    expect(aboutMarkdown).toContain('# Websites from People I Admire');
+  it('contains the looking for section', () => {
+    expect(aboutMarkdown).toContain("# What I'm Looking For");
+    expect(aboutMarkdown).toContain('distributed systems');
   });
 
   it('contains valid markdown links', () => {
@@ -49,7 +40,7 @@ describe('about data', () => {
     const links = aboutMarkdown.match(linkRegex);
 
     expect(links).not.toBeNull();
-    expect(links!.length).toBeGreaterThan(10);
+    expect(links!.length).toBeGreaterThan(3);
   });
 
   it('contains properly formatted headers', () => {
@@ -58,6 +49,6 @@ describe('about data', () => {
     const headers = aboutMarkdown.match(headerRegex);
 
     expect(headers).not.toBeNull();
-    expect(headers!.length).toBeGreaterThan(5);
+    expect(headers!.length).toBeGreaterThan(3);
   });
 });

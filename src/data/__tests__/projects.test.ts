@@ -42,8 +42,10 @@ describe('projects data', () => {
 
   it('dates are valid date strings', () => {
     for (const project of projects) {
-      const date = new Date(project.date);
-      expect(date.toString()).not.toBe('Invalid Date');
+      if (project.date) {
+        const date = new Date(project.date);
+        expect(date.toString()).not.toBe('Invalid Date');
+      }
     }
   });
 

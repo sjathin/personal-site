@@ -7,105 +7,25 @@ export interface WritingItem {
 
 const data: WritingItem[] = [
   {
-    title:
-      "McKinsey's Lilli Looks More Like an API Security Failure Than a Model Jailbreak",
-    url: 'https://www.promptfoo.dev/blog/mckinsey-lilli-appsec-vs-ai-jailbreak/',
-    date: '2026-03-10',
+    title: 'Response Time Analysis of Tasking Framework Task Chains',
+    url: 'https://elib.dlr.de/187965/',
+    date: '2022-08-01',
     description:
-      'Why the reported Lilli incident looks like an application-security chain reaching an AI system, not a model jailbreak.',
+      'Master thesis at the German Aerospace Center (DLR): response time analysis of real-time task chains on multi-core processors using Directed Acyclic Graph (DAG) task models. Introduces an execution model that controls subtask ordering and handles sporadic tasks, reducing analytical pessimism over prior methods.',
   },
   {
-    title: 'Promptfoo is joining OpenAI',
-    url: 'https://www.linkedin.com/posts/michaelldangelo_today-were-announcing-that-promptfoo-will-share-7436818429187088386-_hpH',
-    date: '2026-03-09',
+    title: 'A Survey on Bluetooth 5.0 for Internet of Things',
+    url: 'https://www.researchgate.net/publication/357877216_A_Survey_on_Bluetooth_50_for_Internet_of_Things',
+    date: '2022-01-01',
     description:
-      'Announcing that Promptfoo has agreed to be acquired by OpenAI.',
+      'A survey of Bluetooth 5.0 — what changed over previous versions, why it matters, and how its improvements make it well suited for IoT applications across the industry.',
   },
   {
-    title: 'How AI Regulation Changed in 2025',
-    url: 'https://www.promptfoo.dev/blog/ai-regulation-2025/',
-    date: '2025-12-15',
+    title: 'Scheduling Simulator',
+    url: 'https://www.researchgate.net/publication/354200262_Scheduling_Simulator',
+    date: '2021-06-01',
     description:
-      'Why "AI compliance questions" appeared in security questionnaires and RFPs, and how policy becomes contract requirements.',
-  },
-  {
-    title:
-      "Why Attack Success Rate (ASR) Isn't Comparable Across Jailbreak Papers",
-    url: 'https://www.promptfoo.dev/blog/asr-not-portable-metric/',
-    date: '2025-12-12',
-    description:
-      "ASR isn't portable across papers because measurement choices dominate the headline number. Includes math and a checklist for reading papers.",
-  },
-  {
-    title: 'GPT-5.2 Initial Trust and Safety Assessment',
-    url: 'https://www.promptfoo.dev/blog/gpt-5.2-trust-safety-assessment/',
-    date: '2025-12-11',
-    description:
-      'Day-zero red team of GPT-5.2 focusing on jailbreak resilience and harmful content.',
-  },
-  {
-    title: 'Real-Time Fact Checking for LLM Outputs',
-    url: 'https://www.promptfoo.dev/blog/llm-search-rubric-assertions/',
-    date: '2025-11-28',
-    description:
-      'Introduces search-rubric, an assertion where a search-enabled judge verifies time-sensitive claims during evals and CI.',
-  },
-  {
-    title:
-      'When AI becomes the attacker: The rise of AI-orchestrated cyberattacks',
-    url: 'https://www.promptfoo.dev/blog/anthropic-threat-intelligence-vibe-hacking/',
-    date: '2025-11-10',
-    description:
-      'Connects malware querying LLMs at runtime with "vibe hacking" case studies. Defense needs continuous testing.',
-  },
-  {
-    title:
-      'Reinforcement Learning with Verifiable Rewards Makes Models Faster, Not Smarter',
-    url: 'https://www.promptfoo.dev/blog/rlvr-explained/',
-    date: '2025-10-24',
-    description:
-      'RLVR gains are often "search compression" rather than new reasoning ability.',
-  },
-  {
-    title: "Prompt Injection vs Jailbreaking: What's the Difference?",
-    url: 'https://www.promptfoo.dev/blog/jailbreaking-vs-prompt-injection/',
-    date: '2025-08-18',
-    description:
-      'Jailbreaking targets model safety training; prompt injection targets application trust boundaries.',
-  },
-  {
-    title: 'AI Safety vs AI Security in LLM Applications: What Teams Must Know',
-    url: 'https://www.promptfoo.dev/blog/ai-safety-vs-security/',
-    date: '2025-08-17',
-    description:
-      'Safety protects people from harmful outputs; security protects systems from adversarial manipulation.',
-  },
-  {
-    title: 'Promptfoo Raises $18.4M Series A',
-    url: 'https://www.promptfoo.dev/blog/series-a-announcement/',
-    date: '2025-07-29',
-    description:
-      'Announcing our Series A led by Insight Partners with participation from a16z.',
-  },
-  {
-    title: 'Evaluating political bias in LLMs',
-    url: 'https://www.promptfoo.dev/blog/grok-4-political-bias/',
-    date: '2025-07-24',
-    description:
-      'Open methodology and dataset (2,500 political statements) to measure political leaning in models.',
-  },
-  {
-    title: 'Celebrating 100,000 Users',
-    url: 'https://www.promptfoo.dev/blog/100k-users/',
-    date: '2025-06-10',
-    description:
-      "Promptfoo's journey from prompt evaluation to AI red teaming, marking 100,000 users.",
-  },
-  {
-    title: "Testing Humanity's Last Exam with Promptfoo",
-    url: 'https://www.promptfoo.dev/docs/guides/hle-benchmark/',
-    date: '',
-    description: 'Guide on using Promptfoo to test the HLE benchmark.',
+      'A study and visual simulator of CPU scheduling algorithms, exploring how they affect process scheduling, resource utilization, and performance in real-time applications, and which algorithms suit which scenarios.',
   },
 ];
 

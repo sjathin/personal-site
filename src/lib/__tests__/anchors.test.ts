@@ -12,10 +12,10 @@ function getAboutSectionTitles(markdown: string): string[] {
 
 describe('createHeadingId', () => {
   it.each([
-    ['Some History', 'some-history'],
-    ['Travel / Geography', 'travel-geography'],
-    ['Research & Development', 'research-and-development'],
-    ["Michael's Notes", 'michaels-notes'],
+    ['What I Do', 'what-i-do'],
+    ['Research', 'research'],
+    ['Outside Work', 'outside-work'],
+    ["What I'm Looking For", 'what-im-looking-for'],
     ['Café Crème', 'cafe-creme'],
   ])('creates stable ids for %s', (title, expected) => {
     expect(createHeadingId(title)).toBe(expected);
@@ -32,12 +32,10 @@ describe('createHeadingId', () => {
         createHeadingId(title),
       ]),
     ).toEqual([
-      ['Some History', 'some-history'],
-      ['I Like', 'i-like'],
-      ['Travel / Geography', 'travel-geography'],
-      ['Fun Facts', 'fun-facts'],
-      ['I Dream Of', 'i-dream-of'],
-      ['Websites from People I Admire', 'websites-from-people-i-admire'],
+      ['What I Do', 'what-i-do'],
+      ['Research', 'research'],
+      ['Outside Work', 'outside-work'],
+      ["What I'm Looking For", 'what-im-looking-for'],
     ]);
   });
 });
@@ -46,14 +44,14 @@ describe('createUniqueHeadingIds', () => {
   it('deduplicates repeated heading ids predictably', () => {
     expect(
       createUniqueHeadingIds([
-        'Travel / Geography',
-        'Travel / Geography',
+        'Outside Work',
+        'Outside Work',
         '!!!',
         '!!!',
       ]),
     ).toEqual([
-      'travel-geography',
-      'travel-geography-2',
+      'outside-work',
+      'outside-work-2',
       'section',
       'section-2',
     ]);

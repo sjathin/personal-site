@@ -29,7 +29,7 @@ describe('EmailLink', () => {
   it('renders the email domain', () => {
     render(<EmailLink />);
 
-    expect(screen.getByText('@mldangelo.com')).toBeInTheDocument();
+    expect(screen.getByText('@gmail.com')).toBeInTheDocument();
   });
 
   it('renders as a link element', () => {
@@ -39,7 +39,7 @@ describe('EmailLink', () => {
     expect(link).toBeInTheDocument();
   });
 
-  it('animates through messages over time', async () => {
+  it('displays static email prefix', async () => {
     render(<EmailLink />);
 
     // Flush effects first
@@ -47,19 +47,17 @@ describe('EmailLink', () => {
       await Promise.resolve();
     });
 
-    // Initial state shows 'hi' as default (accessibility: never show empty)
+    // Prefix is always 'jathinsreenivas' (static display)
     const prefix = document.querySelector('.contact-email-prefix');
-    expect(prefix?.textContent).toBe('hi');
+    expect(prefix?.textContent).toBe('jathinsreenivas');
 
-    // Advance through multiple messages to verify animation works
-    // Each message takes ~50 chars + 50 hold ticks at 50ms each
+    // Advance time - prefix remains static
     act(() => {
       vi.advanceTimersByTime(10000); // Advance 10 seconds
     });
 
-    // Animation should have progressed beyond 'hi'
-    // The component continues to animate through messages
-    expect(prefix).toBeInTheDocument();
+    // Prefix should still be the same static value
+    expect(prefix?.textContent).toBe('jathinsreenivas');
   });
 
   it('pauses animation on mouse enter', async () => {
@@ -128,7 +126,7 @@ describe('EmailLink', () => {
     });
 
     const link = screen.getByRole('link');
-    expect(link.getAttribute('href')).toBe('mailto:hi@mldangelo.com');
+    expect(link.getAttribute('href')).toBe('mailto:jathinsreenivas@gmail.com');
   });
 
   it('has invalid class when email prefix is invalid', async () => {

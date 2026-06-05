@@ -3,7 +3,7 @@ export interface Project {
   subtitle?: string;
   link?: string;
   image: string;
-  date: string;
+  date?: string;
   desc: string;
   tech?: string[];
   featured?: boolean;
@@ -11,40 +11,61 @@ export interface Project {
 
 const data: Project[] = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
-    desc: 'Connected to bank accounts to round up purchases and donate spare change to charity.',
-    tech: ['React', 'Node.js', 'Plaid API', 'MongoDB'],
+    title: 'Blockchain Solution to Healthcare Record System',
+    subtitle: 'Hyperledger Fabric Research',
+    link: 'http://dx.doi.org/10.13140/RG.2.2.27957.60640',
+    image: '/images/projects/blockchain.png',
+    date: '2021-07-01',
+    desc: 'Research project exploring Hyperledger Fabric for secure, interoperable healthcare record sharing. Built a proof-of-concept that puts patients at the center of the system, enabling trustable EHR data exchange across providers.',
+    tech: ['Blockchain', 'Hyperledger Fabric', 'Node.js', 'Docker', 'Shell'],
     featured: true,
   },
   {
-    title: 'Harvest',
-    subtitle: '3rd place at Techcrunch Disrupt SF',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
-    desc: 'Low-cost crop monitoring to catch irrigation leaks and nutrient deficiencies.',
-    tech: ['Python', 'Arduino', 'Computer Vision', 'AWS'],
+    title: 'Scheduling Simulator',
+    subtitle: 'Used by 1000+ university students',
+    link: 'https://github.com/sjathin/SchedulingSimulation',
+    image: '/images/projects/scheduling.png',
+    date: '2021-06-01',
+    desc: 'A visual simulator for CPU scheduling algorithms (FCFS, SJF, Round Robin, Priority) that enables students to understand process scheduling, resource utilization, and real-time performance characteristics. Adopted by professors for coursework.',
+    tech: ['Python', 'Algorithms', 'Real-Time Systems'],
     featured: true,
   },
   {
-    title: 'Space Potato',
-    subtitle: 'Kickstarter-funded weather balloon',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
-    desc: 'Potato-powered weather balloon with cameras. Photos published in a coffee table book.',
-    tech: ['Hardware', 'GPS', 'Photography'],
+    title: 'Fall Detection System',
+    subtitle: 'Smartphone sensor-based detection',
+    link: 'http://dx.doi.org/10.13140/RG.2.2.31234.40649',
+    image: '/images/projects/fall.png',
+    date: '2016-08-01',
+    desc: 'A fall detection system using smartphone accelerometer and gyroscope sensors for human activity recognition, achieving 0.77 sensitivity and specificity. Designed for elderly care applications.',
+    tech: ['Android', 'Sensors', 'Signal Processing'],
+    featured: true,
   },
   {
-    title: 'Cat Detector',
-    subtitle: 'CNN for cat breed classification',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
-    desc: 'Classified 60,000+ cats across 80 breeds before server costs shut it down.',
-    tech: ['Python', 'TensorFlow', 'CNN', 'AWS'],
+    title: 'Accident Avoidance & Detection',
+    subtitle: 'IoT + Arduino safety system',
+    link: 'https://github.com/sjathin/Accident-Avoidance-And-Detection',
+    image: '/images/projects/accident.png',
+    date: '2016-11-01',
+    desc: 'Detects vehicle accidents using Arduino sensors and automatically contacts the nearest ambulance via GSM module. Includes a Django web application for emergency dispatch coordination.',
+    tech: ['Python', 'Arduino', 'Django', 'GPS/GSM'],
+  },
+  {
+    title: 'OpenStack Private Cloud Deployment',
+    subtitle: 'Multi-node IaaS infrastructure',
+    link: 'https://github.com/sjathin/OpenStack-Deployment-MicroStack',
+    image: '/images/projects/openstack.png',
+    date: '2020-06-01',
+    desc: 'Documented and deployed a multi-node OpenStack private cloud infrastructure using MicroStack, with detailed guides on networking, compute, and storage configuration.',
+    tech: ['OpenStack', 'Cloud', 'Linux', 'Networking'],
+  },
+  {
+    title: 'UNIX Commands in C',
+    subtitle: 'Systems programming challenge',
+    link: 'https://github.com/sjathin/Unix-Commands',
+    image: '/images/projects/fall.png',
+    date: '2016-06-01',
+    desc: 'Custom implementations of common UNIX commands (ls, cat, grep, wc, etc.) in C — a deep dive into systems programming, file I/O, and process management.',
+    tech: ['C', 'Linux', 'Systems Programming'],
   },
 ];
 

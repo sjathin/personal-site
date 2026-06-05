@@ -48,22 +48,72 @@
   font-size: var(--text-md);
 }
 
-.resume-page .courses {
-  padding-top: 1em;
+/* Compact skills layout */
+.skills-compact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  margin-top: var(--spacing-6);
 }
 
-.resume-page .courses .course-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.skills-compact-row {
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: baseline;
+  padding: var(--spacing-4) var(--spacing-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-bg);
+  background: color-mix(in srgb, var(--color-bg-alt) 50%, transparent);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
 }
 
-@media (max-width: 736px) {
-  .resume-page .courses .course-list {
-    grid-template-columns: 1fr;
+.skills-compact-row:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.skills-compact-label {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--skill-cat-color, var(--color-accent));
+  min-width: 13rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.skills-compact-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills-compact-tag {
+  display: inline-block;
+  padding: 0.4rem 0.85rem;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-fg);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  transition: border-color var(--transition-base), color var(--transition-base), background var(--transition-base);
+}
+
+.skills-compact-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-accent-light);
+}
+
+@media (max-width: 640px) {
+  .skills-compact-row {
+    flex-direction: column;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3);
+  }
+
+  .skills-compact-label {
+    min-width: unset;
   }
 }
 

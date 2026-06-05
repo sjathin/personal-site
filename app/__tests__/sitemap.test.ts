@@ -19,7 +19,7 @@ describe('sitemap', () => {
     );
   });
 
-  it('uses trailing slashes for post routes', () => {
+  it('has no per-post entries (writing is external-only) but any present use trailing slashes', () => {
     const entries = sitemap();
     const postEntries = entries.filter(
       (entry) =>
@@ -27,7 +27,9 @@ describe('sitemap', () => {
         entry.url !== `${SITE_URL}/writing/`,
     );
 
-    expect(postEntries.length).toBeGreaterThan(0);
+    // Writing is currently external links only, so there are no on-site posts.
+    expect(postEntries.length).toBe(0);
+    // Invariant kept for when on-site posts are reintroduced.
     expect(postEntries.every((entry) => entry.url.endsWith('/'))).toBe(true);
   });
 });

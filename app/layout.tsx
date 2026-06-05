@@ -27,7 +27,7 @@ const raleway = Raleway({
 });
 
 const siteDescription =
-  'Member of the Technical Staff at OpenAI, working on Promptfoo and agent security. Previously co-founded Promptfoo, Arthena, and Matroid, and led engineering at Smile ID.';
+  'Software Development Engineer at Amazon, Berlin. Building cloud-native microservices on AWS at scale. M.Sc. in High Integrity Systems, ex-German Aerospace Center (DLR).';
 
 export const metadata: Metadata = {
   title: {
@@ -37,13 +37,14 @@ export const metadata: Metadata = {
   description: siteDescription,
   keywords: [
     AUTHOR_NAME,
-    'OpenAI',
-    'Promptfoo',
-    'agent security',
-    'LLM security',
-    'machine learning',
-    'startup founder',
-    'YC',
+    'Software Engineer',
+    'Amazon',
+    'AWS',
+    'distributed systems',
+    'microservices',
+    'Java',
+    'cloud-native',
+    'Berlin',
   ],
   authors: [{ name: AUTHOR_NAME }],
   creator: AUTHOR_NAME,

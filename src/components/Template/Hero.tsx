@@ -11,28 +11,23 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-title">
-          <span className="hero-name">Michael D&apos;Angelo</span>
+          <span className="hero-name">Jathin Sreenivas</span>
         </h1>
 
         <p className="hero-tagline">
-          Member of the Technical Staff at{' '}
-          <a href="https://openai.com" className="hero-highlight">
-            OpenAI
+          SDE @{' '}
+          <a href="https://amazon.com" className="hero-highlight">
+            Amazon
           </a>
-          , where I work on{' '}
-          <a href="https://promptfoo.dev" className="hero-highlight">
-            Promptfoo
-          </a>{' '}
-          and agent security.
-          <br />
-          Previously co-founded, scaled, and sold Promptfoo to OpenAI.
+          {' '}· Ex-
+          <a href="https://www.dlr.de/EN/" className="hero-highlight">
+            German Aerospace Center
+          </a>
+          {' '}· M.Sc. High Integrity Systems · OSS @{' '}
+          <a href="https://github.com/All-Hands-AI/OpenHands" className="hero-highlight">
+            OpenHands AI
+          </a>
         </p>
-
-        <div className="hero-chips">
-          <span className="hero-chip">YC Alum</span>
-          <span className="hero-chip">Stanford ICME</span>
-          <span className="hero-chip">Co-founded Arthena & Matroid</span>
-        </div>
 
         <div className="hero-cta">
           <Link href="/about" className="button button-primary">
