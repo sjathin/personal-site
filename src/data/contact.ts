@@ -1,6 +1,5 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faResearchgate } from '@fortawesome/free-brands-svg-icons/faResearchgate';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
@@ -32,11 +31,6 @@ const data: ContactItem[] = [
     link: 'https://twitter.com/sjathin95',
     label: 'Twitter',
     icon: faTwitter,
-  },
-  {
-    link: 'https://www.instagram.com/thejsreenivas/',
-    label: 'Instagram',
-    icon: faInstagram,
   },
   {
     link: 'mailto:jathinsreenivas@gmail.com',

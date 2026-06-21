@@ -27,6 +27,14 @@ const data: WritingItem[] = [
     description:
       'A study and visual simulator of CPU scheduling algorithms, exploring how they affect process scheduling, resource utilization, and performance in real-time applications, and which algorithms suit which scenarios.',
   },
+  {
+    title:
+      'Blockchain Solution to Healthcare Record System using Hyperledger Fabric',
+    url: 'https://www.researchgate.net/publication/354951836_Blockchain_Solution_to_Healthcare_Record_System_using_Hyperledger_Fabric',
+    date: '2021-03-01',
+    description:
+      'A permissioned blockchain solution for storing and sharing electronic health records using Hyperledger Fabric — putting patients at the center with grant/revoke access control over their medical data, and addressing the security, privacy, and interoperability gaps in current EHR sharing. Covers core Hyperledger Fabric concepts and the challenges to adoption in healthcare.',
+  },
 ];
 
 export default data;

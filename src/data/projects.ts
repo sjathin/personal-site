@@ -38,7 +38,6 @@ const data: Project[] = [
     date: '2016-08-01',
     desc: 'A fall detection system using smartphone accelerometer and gyroscope sensors for human activity recognition, achieving 0.77 sensitivity and specificity. Designed for elderly care applications.',
     tech: ['Android', 'Sensors', 'Signal Processing'],
-    featured: true,
   },
   {
     title: 'Accident Avoidance & Detection',

@@ -111,6 +111,32 @@ const skills: Skill[] = [
     competency: 4,
     category: ['System Design', 'Data & Research'],
   },
+  {
+    title: 'Event-Driven Architecture',
+    competency: 5,
+    category: ['Backend', 'System Design'],
+  },
+  {
+    title: 'Stream Processing (Kinesis, DynamoDB Streams)',
+    competency: 4,
+    category: ['Cloud & Infrastructure', 'System Design'],
+  },
+  {
+    title: 'Incident Response & On-Call',
+    competency: 4,
+    category: ['System Design'],
+  },
+  // AI & Agentic Engineering
+  {
+    title: 'AI Coding Agents (Claude, Kiro)',
+    competency: 5,
+    category: ['AI & Agentic Engineering'],
+  },
+  {
+    title: 'Agent Skills & Context Engineering',
+    competency: 4,
+    category: ['AI & Agentic Engineering'],
+  },
   // Databases
   {
     title: 'DynamoDB',

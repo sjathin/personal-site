@@ -10,13 +10,13 @@ I hold an M.Sc. in High Integrity Systems from [Frankfurt University of Applied 
 
 I design and maintain backend services at scale — thinking about system design, fault tolerance, deployment automation, and observability. My day-to-day involves Java, Spring, AWS (CDK, Lambda, DynamoDB, SQS, CloudWatch), and infrastructure-as-code practices.
 
-I enjoy the challenge of building systems that are both reliable and simple — where operational burden is low and the architecture can evolve without rewrites.
+I enjoy the challenge of building systems that are both reliable and simple — where operational burden is low and the architecture can evolve without rewrites. The work I'm most proud of is often unglamorous but high-impact: root-causing recurring incidents that others had only worked around, and re-architecting fragile stream-processing pipelines into event-driven systems that simply stop paging.
 
 # Research
 
 During my master's thesis at DLR, I worked on response time analysis of real-time task chains for satellite software. I developed an execution model for DAG tasks on multi-core processors with fixed-priority scheduling, improving on prior methods limited to periodic FCFS tasks. The work is [published here](https://elib.dlr.de/187965/).
 
-I've also published work on [blockchain in healthcare](http://dx.doi.org/10.13140/RG.2.2.27957.60640), [scheduling simulators](http://dx.doi.org/10.13140/RG.2.2.28374.16960), and [Bluetooth 5.0 for IoT](http://dx.doi.org/10.13140/RG.2.2.14312.19203).
+For other writing and smaller publications, see my [writing](/writing).
 
 # Outside Work
 
