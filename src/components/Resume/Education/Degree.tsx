@@ -11,7 +11,13 @@ export default function Degree({ data }: DegreeProps) {
         <h4 className="degree">{data.degree}</h4>
         <p className="school">
           <a href={data.link}>{data.school}</a>,{' '}
-          <time dateTime={String(data.year)}>{data.year}</time>
+          {data.startYear ? (
+            <time dateTime={String(data.year)}>
+              {data.startYear} – {data.year}
+            </time>
+          ) : (
+            <time dateTime={String(data.year)}>{data.year}</time>
+          )}
         </p>
       </header>
     </article>

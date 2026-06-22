@@ -37,9 +37,9 @@ const work: Position[] = [
     endDate: '2022-08-01',
     summary: `Research on response time analysis of real-time task chains for satellite software at DLR's Institute for Software Technology.`,
     highlights: [
-      'Developed a novel execution model for response time analysis of DAG tasks on multi-core processors with fixed-priority scheduling.',
-      'Implemented the framework in Python, validated against satellite system task models — published at DLR elib.',
-      'Extended prior research from periodic/FCFS to sporadic tasks with priority-based execution, reducing analytical pessimism.',
+      'Developed a novel worst-case response-time analysis for sporadic DAG tasks on multi-core processors under preemptive global fixed-priority scheduling — proving that assigning intra-task priorities to DAG subtasks tightens the safe upper bound on response time.',
+      'Designed an algorithm that controls subtask execution order to derive that bound, and modeled sporadic tasks without collapsing them to periodic — reducing analytical pessimism in inter-task interference.',
+      'Validated in Python across hundreds of randomly generated DAGs (up to 150 nodes / 8 threads, via Erdös–Rényi and Nested Fork-Join generators), showing the method outperforms state-of-the-art approaches; published at DLR elib.',
     ],
   },
   {
@@ -48,10 +48,9 @@ const work: Position[] = [
     url: 'https://amazon.com',
     startDate: '2021-03-01',
     endDate: '2021-08-01',
-    summary: `End-to-end feature delivery on Amazon Retail Mobile — design, implementation, worldwide rollout, and post-launch monitoring.`,
+    summary: `End-to-end feature delivery on Amazon Retail Mobile — design, implementation, and worldwide rollout.`,
     highlights: [
-      'Designed and shipped a customer review images feature (Java, Spring, Angular) deployed worldwide — 78% increase in image views, validated via A/B testing.',
-      'Monitored post-release metrics (CPU, memory, latency) via CloudWatch; full project lifecycle in one internship.',
+      'Designed and shipped the redesigned customer-review image gallery (Java, Spring, Angular) — a masonry-layout, lazy-loaded page replacing the legacy experience — and owned its worldwide rollout; drove a 78% increase in image views, validated via A/B testing.',
     ],
   },
   {
@@ -60,10 +59,9 @@ const work: Position[] = [
     url: 'https://www.softwareag.com',
     startDate: '2020-03-01',
     endDate: '2021-01-01',
-    summary: `Built internal tooling and optimized production services at a global enterprise software company (€800M+ revenue).`,
+    summary: `Built internal tooling and optimized production services at a global enterprise software company (€800M+ revenue), alongside M.Sc. studies.`,
     highlights: [
-      'Optimized RESTful services (Java) to automate error handling, reducing production errors by 30%.',
-      'Designed and shipped a university relations platform using Spring Boot, Angular, and Keycloak.',
+      'Optimized Java RESTful services — cutting production errors by 30% — and built an internal university-relations platform with Spring Boot, Angular, and Keycloak SSO.',
     ],
   },
   {
@@ -74,8 +72,7 @@ const work: Position[] = [
     endDate: '2019-07-01',
     summary: `Delivered enterprise insurance applications serving 5,000+ agents across multiple clients in the APAC region.`,
     highlights: [
-      'Built and delivered web applications using RESTful services, Spring, Java, and MySQL for 3 enterprise clients.',
-      'Designed a Round Robin workload delegation system used by 5,000+ insurance agents.',
+      'Built a workload-distribution feature that replaced manual job assignment with efficient round-robin distribution across client employees — initially for one insurance client, then promoted into the core product for all clients after its impact; used by 5,000+ agents.',
       'Automated WebLogic deployment via Java/WLST scripting — reduced deployment times by 90%.',
     ],
   },
