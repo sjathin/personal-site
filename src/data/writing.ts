@@ -35,6 +35,20 @@ const data: WritingItem[] = [
     description:
       'A permissioned blockchain solution for storing and sharing electronic health records using Hyperledger Fabric — putting patients at the center with grant/revoke access control over their medical data, and addressing the security, privacy, and interoperability gaps in current EHR sharing. Covers core Hyperledger Fabric concepts and the challenges to adoption in healthcare.',
   },
+  {
+    title: 'Fall Detection System Using Sensors Embedded In Smartphones',
+    url: 'https://www.researchgate.net/publication/354920281_Fall_Detection_System_Using_Sensors_Embedded_In_Smartphones',
+    date: '2020-08-01',
+    description:
+      'A fall-detection system that uses the sensors built into smartphones to recognize human activity and detect falls — applying activity-recognition techniques to sensor data to flag fall events.',
+  },
+  {
+    title: 'Accident Avoidance and Detection',
+    url: 'https://www.ijltemas.in/DigitalLibrary/Vol.5Issue5/71-74.pdf',
+    date: '2016-05-01',
+    description:
+      'A vehicle safety system that uses GPS, an accelerometer, and a GSM network to detect collisions and send the accident location to an alert center for faster emergency response, and an MQ3 gas sensor to detect alcohol and prevent drunk driving.',
+  },
 ];
 
 export default data;
