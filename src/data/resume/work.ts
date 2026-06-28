@@ -25,7 +25,7 @@ const work: Position[] = [
       'Cut a cross-region compliance-migration outage window from ~6 hours to under 15 minutes (24x) by designing a pre-staged deployment across 3 teams in 3 time zones — zero lost events and zero manual intervention; adopted as the template for later migrations.',
       'Traced a 50% drop in a leadership-reported conversion metric through the full analytics pipeline to 36 bot accounts producing 87% of traffic with zero submissions — proved no customer regression and delivered both a self-service query and a permanent pipeline fix.',
       'Apply AI coding agents fluently across day-to-day engineering — writing and reviewing code, drafting docs, and accelerating on-call investigation — and author service-specific agent skills and context so the agent stays grounded and accurate.',
-      "Built an AI onboarding skill for one of my team's services that let away teams self-onboard in ~30 minutes instead of ~3 days, deflecting support questions about how the service works; and orchestrated a multi-team campaign where scheduled AI jobs tracked responses across tickets — updating docs, recording deadlines, marking completion, and flagging only the tickets needing my attention.",
+      "Built an AI onboarding skill for one of my team's services so away teams could self-onboard and resolve questions about how the service works without support; and orchestrated a multi-team campaign where scheduled AI jobs tracked responses across tickets — updating docs, recording deadlines, marking completion, and flagging only the tickets needing my attention.",
     ],
   },
   {
